@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="tests.TestSuite2">
+      <methods>
+      <include name ="test01"></include> <!---run a selective test case-->
+      <exclude name ="test02"></exclude> <!---skip a selective test case-->
+      
+      </methods>
+      </class>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
